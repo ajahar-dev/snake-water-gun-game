@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(191, 138, 241);
+}
+
+.container {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.849);
+    border-radius: 20px;
+    width: 400px;
+    height: 450px;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(240, 255, 241);
+}
+
+.scoreSection {
+    height: 45px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 45px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#result {
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 100%;
+    min-height: 30%;
+    text-align: center;
+}
+
+.btnbox {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.btnbox button {
+    box-shadow: 0px 0px 15px rgb(118, 190, 183);
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(206, 255, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(83, 85, 82);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(162, 198, 198);
+}
+
+.info {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 350px;
+        height: 400px;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    :root {
+        font-size: 13px;
+    }
+
+    .btnbox button {
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        padding: 10px;
+    }
+}
